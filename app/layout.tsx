@@ -15,11 +15,12 @@ export default async function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="h-full">
-        <div className="flex flex-col min-h-full w-full">
+        <div className="flex flex-col w-full min-h-full">
           <Header />
-          <div className="flex-row flex flex-1 w-full">
+          <div className="flex flex-row flex-1 w-full">
+            {/* @ts-ignore */}
             <TodosNavBar />
-            <div className="m-10 flex-1">{children}</div>
+            <div className="flex-1 m-10">{children}</div>
           </div>
         </div>
       </body>
